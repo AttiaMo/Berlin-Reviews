@@ -1,0 +1,6 @@
+framework module Pods_Berlin_ReviewsUITests {
+  umbrella header "Pods-Berlin ReviewsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

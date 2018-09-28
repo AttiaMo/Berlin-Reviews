@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256B6F2AA654A350756E7E03 /* Pods_Berlin_Reviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA769F34C0552433AFC7B89F /* Pods_Berlin_Reviews.framework */; };
 		428A857C215D4FBC0011E8FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A857B215D4FBC0011E8FA /* AppDelegate.swift */; };
-		428A857E215D4FBC0011E8FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A857D215D4FBC0011E8FA /* ViewController.swift */; };
 		428A8581215D4FBC0011E8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428A857F215D4FBC0011E8FA /* Main.storyboard */; };
 		428A8583215D4FBF0011E8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428A8582215D4FBF0011E8FA /* Assets.xcassets */; };
 		428A8586215D4FBF0011E8FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428A8584215D4FBF0011E8FA /* LaunchScreen.storyboard */; };
 		428A8591215D4FBF0011E8FA /* Berlin_ReviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A8590215D4FBF0011E8FA /* Berlin_ReviewsTests.swift */; };
 		428A859C215D4FBF0011E8FA /* Berlin_ReviewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A859B215D4FBF0011E8FA /* Berlin_ReviewsUITests.swift */; };
+		428A85AA215D530A0011E8FA /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85A9215D530A0011E8FA /* ReviewTableViewCell.swift */; };
+		428A85B1215E03D30011E8FA /* ReviewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85AC215E03D30011E8FA /* ReviewsListViewController.swift */; };
+		428A85B2215E03D30011E8FA /* ReviewsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85AD215E03D30011E8FA /* ReviewsListRouter.swift */; };
+		428A85B3215E03D30011E8FA /* ReviewsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85AE215E03D30011E8FA /* ReviewsListBuilder.swift */; };
+		428A85B4215E03D30011E8FA /* ReviewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85AF215E03D30011E8FA /* ReviewsListViewModel.swift */; };
+		428A85B6215E0D7B0011E8FA /* ItemReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85B5215E0D7B0011E8FA /* ItemReviews.swift */; };
+		428A85BA215E0FBE0011E8FA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85B8215E0FBA0011E8FA /* BaseViewModel.swift */; };
+		428A85BB215E0FBE0011E8FA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85B9215E0FBD0011E8FA /* BaseViewController.swift */; };
+		428A85C0215E169A0011E8FA /* Cell+Identfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85BE215E16990011E8FA /* Cell+Identfier.swift */; };
+		428A85C1215E169A0011E8FA /* StoryboaedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85BF215E16990011E8FA /* StoryboaedExtension.swift */; };
+		428A85D9215E5C4A0011E8FA /* ReviewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85D4215E5C490011E8FA /* ReviewsAPI.swift */; };
+		428A85DA215E5C4A0011E8FA /* ApiMenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85D5215E5C490011E8FA /* ApiMenuRepository.swift */; };
+		428A85DB215E5C4A0011E8FA /* ReviewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85D6215E5C4A0011E8FA /* ReviewsManager.swift */; };
+		428A85DC215E5C4A0011E8FA /* MoyaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85D7215E5C4A0011E8FA /* MoyaRequest.swift */; };
+		428A85DD215E5C4A0011E8FA /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85D8215E5C4A0011E8FA /* ApiError.swift */; };
+		428A85E4215E9EFC0011E8FA /* ServerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428A85E3215E9EF90011E8FA /* ServerManagerTest.swift */; };
+		6A9D7E8BF12897728C241B82 /* Pods_Berlin_ReviewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B990A374155CB05EB77AF6D /* Pods_Berlin_ReviewsUITests.framework */; };
+		7BD5DE63A52C4BA213D44D0A /* Pods_Berlin_ReviewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC56357E37C4FC059DA2271F /* Pods_Berlin_ReviewsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		178B8C985E9295C85553A27B /* Pods-Berlin Reviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berlin Reviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-Berlin Reviews/Pods-Berlin Reviews.release.xcconfig"; sourceTree = "<group>"; };
+		221DC7CBF59C36D2C8985768 /* Pods-Berlin ReviewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berlin ReviewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Berlin ReviewsUITests/Pods-Berlin ReviewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		428A8578215D4FBC0011E8FA /* Berlin Reviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Berlin Reviews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A857B215D4FBC0011E8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		428A857D215D4FBC0011E8FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		428A8580215D4FBC0011E8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		428A8582215D4FBF0011E8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		428A8585215D4FBF0011E8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +66,29 @@
 		428A8597215D4FBF0011E8FA /* Berlin ReviewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Berlin ReviewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		428A859B215D4FBF0011E8FA /* Berlin_ReviewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ReviewsUITests.swift; sourceTree = "<group>"; };
 		428A859D215D4FBF0011E8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428A85A9215D530A0011E8FA /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		428A85AC215E03D30011E8FA /* ReviewsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsListViewController.swift; sourceTree = "<group>"; };
+		428A85AD215E03D30011E8FA /* ReviewsListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsListRouter.swift; sourceTree = "<group>"; };
+		428A85AE215E03D30011E8FA /* ReviewsListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsListBuilder.swift; sourceTree = "<group>"; };
+		428A85AF215E03D30011E8FA /* ReviewsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsListViewModel.swift; sourceTree = "<group>"; };
+		428A85B5215E0D7B0011E8FA /* ItemReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReviews.swift; sourceTree = "<group>"; };
+		428A85B8215E0FBA0011E8FA /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		428A85B9215E0FBD0011E8FA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		428A85BE215E16990011E8FA /* Cell+Identfier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Identfier.swift"; sourceTree = "<group>"; };
+		428A85BF215E16990011E8FA /* StoryboaedExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboaedExtension.swift; sourceTree = "<group>"; };
+		428A85D4215E5C490011E8FA /* ReviewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsAPI.swift; sourceTree = "<group>"; };
+		428A85D5215E5C490011E8FA /* ApiMenuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMenuRepository.swift; sourceTree = "<group>"; };
+		428A85D6215E5C4A0011E8FA /* ReviewsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsManager.swift; sourceTree = "<group>"; };
+		428A85D7215E5C4A0011E8FA /* MoyaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaRequest.swift; sourceTree = "<group>"; };
+		428A85D8215E5C4A0011E8FA /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		428A85E3215E9EF90011E8FA /* ServerManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManagerTest.swift; sourceTree = "<group>"; };
+		4B990A374155CB05EB77AF6D /* Pods_Berlin_ReviewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Berlin_ReviewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B064A7C63A30251F6E13D6 /* Pods-Berlin ReviewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berlin ReviewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Berlin ReviewsTests/Pods-Berlin ReviewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7677BA30073612CEFFBA54A3 /* Pods-Berlin ReviewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berlin ReviewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Berlin ReviewsUITests/Pods-Berlin ReviewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94F2C1271F8E3B3F01766A60 /* Pods-Berlin Reviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berlin Reviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Berlin Reviews/Pods-Berlin Reviews.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BFE91B5BB7989EBDC43DFA /* Pods-Berlin ReviewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berlin ReviewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Berlin ReviewsTests/Pods-Berlin ReviewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC56357E37C4FC059DA2271F /* Pods_Berlin_ReviewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Berlin_ReviewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA769F34C0552433AFC7B89F /* Pods_Berlin_Reviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Berlin_Reviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256B6F2AA654A350756E7E03 /* Pods_Berlin_Reviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD5DE63A52C4BA213D44D0A /* Pods_Berlin_ReviewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9D7E8BF12897728C241B82 /* Pods_Berlin_ReviewsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +126,8 @@
 				428A858F215D4FBF0011E8FA /* Berlin ReviewsTests */,
 				428A859A215D4FBF0011E8FA /* Berlin ReviewsUITests */,
 				428A8579215D4FBC0011E8FA /* Products */,
+				58C45057CDDBA19B4409A932 /* Pods */,
+				E12EEDDEF8CE7F17881C4092 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +145,13 @@
 			isa = PBXGroup;
 			children = (
 				428A857B215D4FBC0011E8FA /* AppDelegate.swift */,
-				428A857D215D4FBC0011E8FA /* ViewController.swift */,
-				428A857F215D4FBC0011E8FA /* Main.storyboard */,
 				428A8582215D4FBF0011E8FA /* Assets.xcassets */,
 				428A8584215D4FBF0011E8FA /* LaunchScreen.storyboard */,
 				428A8587215D4FBF0011E8FA /* Info.plist */,
+				428A85C8215E177D0011E8FA /* Network */,
+				428A85DE215E7FCD0011E8FA /* Extension */,
+				428A85BC215E104B0011E8FA /* Base */,
+				428A85B7215E0DAC0011E8FA /* Scene */,
 			);
 			path = "Berlin Reviews";
 			sourceTree = "<group>";
@@ -111,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				428A8590215D4FBF0011E8FA /* Berlin_ReviewsTests.swift */,
+				428A85E3215E9EF90011E8FA /* ServerManagerTest.swift */,
 				428A8592215D4FBF0011E8FA /* Info.plist */,
 			);
 			path = "Berlin ReviewsTests";
@@ -125,6 +175,121 @@
 			path = "Berlin ReviewsUITests";
 			sourceTree = "<group>";
 		};
+		428A85B7215E0DAC0011E8FA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				428A85E1215E836E0011E8FA /* Review scene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		428A85BC215E104B0011E8FA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				428A85B9215E0FBD0011E8FA /* BaseViewController.swift */,
+				428A85B8215E0FBA0011E8FA /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		428A85BD215E105C0011E8FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				428A85B5215E0D7B0011E8FA /* ItemReviews.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		428A85C8215E177D0011E8FA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				428A85D3215E5C3D0011E8FA /* Moya */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		428A85D3215E5C3D0011E8FA /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				428A85D8215E5C4A0011E8FA /* ApiError.swift */,
+				428A85D5215E5C490011E8FA /* ApiMenuRepository.swift */,
+				428A85D4215E5C490011E8FA /* ReviewsAPI.swift */,
+				428A85D6215E5C4A0011E8FA /* ReviewsManager.swift */,
+				428A85D7215E5C4A0011E8FA /* MoyaRequest.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		428A85DE215E7FCD0011E8FA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				428A85BE215E16990011E8FA /* Cell+Identfier.swift */,
+				428A85BF215E16990011E8FA /* StoryboaedExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		428A85DF215E82E70011E8FA /* Reviews List */ = {
+			isa = PBXGroup;
+			children = (
+				428A85BD215E105C0011E8FA /* Models */,
+				428A85E0215E82F80011E8FA /* Cells */,
+				428A85AE215E03D30011E8FA /* ReviewsListBuilder.swift */,
+				428A85AD215E03D30011E8FA /* ReviewsListRouter.swift */,
+				428A85AC215E03D30011E8FA /* ReviewsListViewController.swift */,
+				428A85AF215E03D30011E8FA /* ReviewsListViewModel.swift */,
+			);
+			path = "Reviews List";
+			sourceTree = "<group>";
+		};
+		428A85E0215E82F80011E8FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				428A85A9215D530A0011E8FA /* ReviewTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		428A85E1215E836E0011E8FA /* Review scene */ = {
+			isa = PBXGroup;
+			children = (
+				428A85E2215E83830011E8FA /* Storyboard */,
+				428A85DF215E82E70011E8FA /* Reviews List */,
+			);
+			path = "Review scene";
+			sourceTree = "<group>";
+		};
+		428A85E2215E83830011E8FA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				428A857F215D4FBC0011E8FA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		58C45057CDDBA19B4409A932 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F2C1271F8E3B3F01766A60 /* Pods-Berlin Reviews.debug.xcconfig */,
+				178B8C985E9295C85553A27B /* Pods-Berlin Reviews.release.xcconfig */,
+				62B064A7C63A30251F6E13D6 /* Pods-Berlin ReviewsTests.debug.xcconfig */,
+				B8BFE91B5BB7989EBDC43DFA /* Pods-Berlin ReviewsTests.release.xcconfig */,
+				7677BA30073612CEFFBA54A3 /* Pods-Berlin ReviewsUITests.debug.xcconfig */,
+				221DC7CBF59C36D2C8985768 /* Pods-Berlin ReviewsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E12EEDDEF8CE7F17881C4092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA769F34C0552433AFC7B89F /* Pods_Berlin_Reviews.framework */,
+				CC56357E37C4FC059DA2271F /* Pods_Berlin_ReviewsTests.framework */,
+				4B990A374155CB05EB77AF6D /* Pods_Berlin_ReviewsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 428A85A0215D4FBF0011E8FA /* Build configuration list for PBXNativeTarget "Berlin Reviews" */;
 			buildPhases = (
+				F66C64FBA1E370D10103CFC1 /* [CP] Check Pods Manifest.lock */,
 				428A8574215D4FBC0011E8FA /* Sources */,
 				428A8575215D4FBC0011E8FA /* Frameworks */,
 				428A8576215D4FBC0011E8FA /* Resources */,
+				B8343B043D8F3A9E6919EDB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 428A85A3215D4FBF0011E8FA /* Build configuration list for PBXNativeTarget "Berlin ReviewsTests" */;
 			buildPhases = (
+				B2BA288573941D5A39CDDABB /* [CP] Check Pods Manifest.lock */,
 				428A8588215D4FBF0011E8FA /* Sources */,
 				428A8589215D4FBF0011E8FA /* Frameworks */,
 				428A858A215D4FBF0011E8FA /* Resources */,
+				EB37E28E89847995DD0DB356 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +336,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 428A85A6215D4FBF0011E8FA /* Build configuration list for PBXNativeTarget "Berlin ReviewsUITests" */;
 			buildPhases = (
+				04EFB41C3FF32004ABF1D7DF /* [CP] Check Pods Manifest.lock */,
 				428A8593215D4FBF0011E8FA /* Sources */,
 				428A8594215D4FBF0011E8FA /* Frameworks */,
 				428A8595215D4FBF0011E8FA /* Resources */,
@@ -251,12 +421,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04EFB41C3FF32004ABF1D7DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Berlin ReviewsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2BA288573941D5A39CDDABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Berlin ReviewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8343B043D8F3A9E6919EDB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Berlin Reviews/Pods-Berlin Reviews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Berlin Reviews/Pods-Berlin Reviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB37E28E89847995DD0DB356 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Berlin ReviewsTests/Pods-Berlin ReviewsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Berlin ReviewsTests/Pods-Berlin ReviewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F66C64FBA1E370D10103CFC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Berlin Reviews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		428A8574215D4FBC0011E8FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428A857E215D4FBC0011E8FA /* ViewController.swift in Sources */,
+				428A85DB215E5C4A0011E8FA /* ReviewsManager.swift in Sources */,
+				428A85DC215E5C4A0011E8FA /* MoyaRequest.swift in Sources */,
+				428A85C0215E169A0011E8FA /* Cell+Identfier.swift in Sources */,
+				428A85BA215E0FBE0011E8FA /* BaseViewModel.swift in Sources */,
+				428A85BB215E0FBE0011E8FA /* BaseViewController.swift in Sources */,
+				428A85B2215E03D30011E8FA /* ReviewsListRouter.swift in Sources */,
+				428A85DD215E5C4A0011E8FA /* ApiError.swift in Sources */,
+				428A85B3215E03D30011E8FA /* ReviewsListBuilder.swift in Sources */,
+				428A85B4215E03D30011E8FA /* ReviewsListViewModel.swift in Sources */,
+				428A85DA215E5C4A0011E8FA /* ApiMenuRepository.swift in Sources */,
+				428A85D9215E5C4A0011E8FA /* ReviewsAPI.swift in Sources */,
+				428A85AA215D530A0011E8FA /* ReviewTableViewCell.swift in Sources */,
+				428A85B6215E0D7B0011E8FA /* ItemReviews.swift in Sources */,
+				428A85B1215E03D30011E8FA /* ReviewsListViewController.swift in Sources */,
+				428A85C1215E169A0011E8FA /* StoryboaedExtension.swift in Sources */,
 				428A857C215D4FBC0011E8FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428A85E4215E9EFC0011E8FA /* ServerManagerTest.swift in Sources */,
 				428A8591215D4FBF0011E8FA /* Berlin_ReviewsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,15 +724,13 @@
 		};
 		428A85A1215D4FBF0011E8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F2C1271F8E3B3F01766A60 /* Pods-Berlin Reviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR4F29DJ73;
 				INFOPLIST_FILE = "Berlin Reviews/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Attiamo.Berlin-Reviews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,15 +740,13 @@
 		};
 		428A85A2215D4FBF0011E8FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178B8C985E9295C85553A27B /* Pods-Berlin Reviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR4F29DJ73;
 				INFOPLIST_FILE = "Berlin Reviews/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Attiamo.Berlin-Reviews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -466,17 +756,14 @@
 		};
 		428A85A4215D4FBF0011E8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B064A7C63A30251F6E13D6 /* Pods-Berlin ReviewsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR4F29DJ73;
 				INFOPLIST_FILE = "Berlin ReviewsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Attiamo.Berlin-ReviewsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -487,17 +774,14 @@
 		};
 		428A85A5215D4FBF0011E8FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BFE91B5BB7989EBDC43DFA /* Pods-Berlin ReviewsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR4F29DJ73;
 				INFOPLIST_FILE = "Berlin ReviewsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Attiamo.Berlin-ReviewsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -508,16 +792,13 @@
 		};
 		428A85A7215D4FBF0011E8FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7677BA30073612CEFFBA54A3 /* Pods-Berlin ReviewsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR4F29DJ73;
 				INFOPLIST_FILE = "Berlin ReviewsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Attiamo.Berlin-ReviewsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -528,16 +809,13 @@
 		};
 		428A85A8215D4FBF0011E8FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221DC7CBF59C36D2C8985768 /* Pods-Berlin ReviewsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR4F29DJ73;
 				INFOPLIST_FILE = "Berlin ReviewsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Attiamo.Berlin-ReviewsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
